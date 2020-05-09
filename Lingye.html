@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Prac May.9th, 2020</title>
+    </head>
+<style>
+*{
+  box-sizing: border-box;
+}
+/*body*/
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+/* Set row margin*/
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: pink;
+  padding: 13px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+
+<div class="main">
+
+<h1>Hi! I'm Lingye WU</h1>
+<hr>
+
+<h2>WELCOME!</h2>
+<p>Want to know me? Here are some <strong>fun</strong> facts about me!</p>
+
+<!-- Gallery Grid I learnt how to make a gallery grid from https://www.w3schools.com/howto/howto_css_portfolio_gallery.asp -->
+
+<!--The <div> element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.-->
+<div class="row">
+
+  <div class="column">
+    <div class="content">
+      <img src="https://usathss.files.wordpress.com/2019/04/kemery-martin.jpg?w=1000&h=600&crop=1" alt="photo 1" style="width:100%">
+      <h3>My hobbies</h3>
+      <p>I like playing basketball! I have been the manager for boy's basketball at ISAK for a year now! I've also joined girls' basketball team!</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="content">
+      <img src="https://media-exp1.licdn.com/dms/image/C511BAQG8-h0waQOb-A/company-background_10000/0?e=2159024400&v=beta&t=yrlNgzTYuo1oaYGvwmDXslluXuAdA_G_LCX00WTHsUo" alt="photo 2" style="width:100%">
+      <h3>My school</h3>
+      <p>Located in the middle of Japan, my school has been my second homw for two years now. It's call <strong>UWC ISAK Japan</strong>.</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="content">
+      <img src="https://i.ytimg.com/vi/23pYfDKyfBk/maxresdefault.jpg" alt="photo 3" style="width:100%">
+      <h3>I'm good at...</h3>
+      <p>I'm always fond of playing music and making music. I started a band called "ZOO" last year and had a lot of fun doing music with people around me!</p>
+    </div>
+  </div>
+  
+  
+  <div class="column">
+    <div class="content">
+      <img src="https://lh3.googleusercontent.com/proxy/PiN_XVM3pmoQawbn4w8IAp1cUneSMFG1_1XynlFLLcyUtq3tuoVb5BeT8Ld2E7hEqVdUwAjZw4j00hiiDRjhRUV27R7GfQQ3B3-9ZG6B4QPXR23ObA2cde1JomnczOQ" alt="photo 4" style="width:100%">
+      <h3>The cirriculum I am in...</h3>
+      <p>I am currently taking the IB diploma program! It is a two-year international cirriculum that is challenging but enjoyable.</p>
+    </div>
+  </div>
+  
+</div>
+
+<div class="column">
+    <div class="content">
+  <img src="https://static.wixstatic.com/media/abd40a_d39fd4cd5f9c43cf9b9a378e02f5e951~mv2.jpg/v1/crop/x_3,y_0,w_545,h_800/fill/w_190,h_278,al_c,q_80,usm_0.66_1.00_0.01/IMG_3004.webp" alt="selfie" style="width:100%">
+  <h3>How do I look like...</h3>
+  <p>This is me! Nice to see you!</p>
+</div>
+
+<!-- END MAIN -->
+</div>
